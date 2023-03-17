@@ -1,5 +1,9 @@
 export const routes = [
     {
+        path: '/',
+        redirect: '/users'
+    },
+    {
         path: '/users',
         name: 'users',
         component: () => import("@/pages/users.vue")
