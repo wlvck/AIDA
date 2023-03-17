@@ -62,3 +62,62 @@
     border-bottom: 1px solid $blue;
   }
 }
+
+.v-btn {
+  height: unset !important;
+  padding: 10px 41px !important;
+  border-radius: 5px !important;
+  text-transform: capitalize;
+}
+
+.page-header {
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #0C2443;
+}
+
+.status-btn {
+  padding: 9px 38px !important;
+  width: 140px !important;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
+
+.green {
+  background: $green;
+}
+
+.yellow {
+  background: $yellow;
+}
+
+.red {
+  background: $red;
+}
+
+.transparent-btn {
+  border: 1px solid $blue;
+  background: transparent !important;
+  color: $blue;
+
+  svg {
+    margin-right: 12px;
+  }
+}
+
+.filter-btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 14px 20px !important;
+  color: $blue;
+  background: $light-blue;
+
+  svg {
+    margin-left: 8px;
+  }
+}

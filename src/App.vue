@@ -1,14 +1,16 @@
 <template>
-  <div class="layout">
+  <div class="layout d-flex flex-column">
     <navbar/>
-    <router-view v-slot="{Component, route}">
-      <transition
-          enter-active-class="animate__animated animate__slideInLeft"
-          leave-active-class="animate__animated animate__slideOutRight"
-      >
-        <component :is="Component" />
-      </transition>
-    </router-view>
+    <div class="flex-shrink-1 flex-grow-1">
+      <router-view v-slot="{Component, route}">
+        <transition
+            enter-active-class="animate__animated animate__fadeIn animate__faster"
+            leave-active-class="animate__animated animate__fadeOut animate__faster"
+        >
+          <component :is="Component"/>
+        </transition>
+      </router-view>
+    </div>
   </div>
 </template>
 
