@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import { createPinia } from 'pinia';
 import { router } from './router';
+import 'animate.css';
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
