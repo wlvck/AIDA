@@ -3,12 +3,7 @@
     <navbar/>
     <div class="flex-shrink-1 flex-grow-1">
       <router-view v-slot="{Component, route}">
-        <transition
-            enter-active-class="animate__animated animate__fadeIn animate__faster"
-            leave-active-class="animate__animated animate__fadeOut animate__faster"
-        >
-          <component :is="Component"/>
-        </transition>
+        <component :is="Component"/>
       </router-view>
     </div>
 

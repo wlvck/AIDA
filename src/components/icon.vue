@@ -8,6 +8,8 @@ import exportIcon from "@/components/icons/export-icon.vue"
 import search from "@/components/icons/search.vue";
 import arrowBottom from "@/components/icons/arrow-bottom.vue";
 import filterArrow from "@/components/icons/filter-arrow.vue";
+import confirmed from "@/components/icons/confirmed.vue";
+import reject from "@/components/icons/reject.vue";
 export default {
   name: 'icon',
   props: {
@@ -19,6 +21,8 @@ export default {
     search,
     arrowBottom,
     filterArrow,
+    confirmed,
+    reject,
   }
 }
 </script>
