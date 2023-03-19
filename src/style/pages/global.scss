@@ -1,4 +1,6 @@
-body {
+.layout {
+  padding-bottom: 40px;
+
   &::-webkit-scrollbar {
     width: 10px;
   }
@@ -7,13 +9,9 @@ body {
     background: $light-blue;
   }
 
-  ::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
     background: $blue;
   }
-}
-
-.layout {
-  min-height: 200vh;
 }
 
 .page {
@@ -67,7 +65,7 @@ body {
   padding-left: 56px !important;
 }
 
-.v-table--density-default > .v-table__wrapper > table > thead > tr:first-child th {
+.v-table--density-default > .v-table__wrapper > table > thead > tr > th:first-child {
   padding-left: 56px !important;
 }
 
@@ -86,6 +84,13 @@ body {
   }
 }
 
-.v-table--density-default > .v-table__wrapper > table > thead > tr:last-child th {
-  padding-right: 56px !important;
+.pagination__block {
+  margin-top: 200px;
+}
+
+.pagination__content {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.5);
 }

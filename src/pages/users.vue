@@ -67,6 +67,17 @@
       </tr>
       </tbody>
     </v-table>
+    <div class="pagination__block d-flex align-center justify-space-between">
+      <div class="pagination__content">
+        Показано 1-100 из 2879 записей
+      </div>
+      <div class="text-center">
+        <v-pagination
+            :length="15"
+            :total-visible="7"
+        ></v-pagination>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -11,6 +11,7 @@
         </transition>
       </router-view>
     </div>
+
   </div>
 </template>
 
