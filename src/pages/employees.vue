@@ -46,20 +46,14 @@
         <td class="text-center">Администратор</td>
         <td></td>
       </tr>
-      <tr>
+      <tr v-for="index in 10" :key="index">
         <td>Иванов Иван</td>
         <td class="text-center">Теолог</td>
         <td class="text-center">УДР</td>
         <td class="text-center">
-          <v-btn elevation="0" class="transparent-btn">Логин и пароль</v-btn>
-        </td>
-      </tr>
-      <tr>
-        <td>Ахметов Мыктыбек</td>
-        <td class="text-center">Просмотр</td>
-        <td class="text-center">Акимат – Алматы</td>
-        <td class="text-center">
-          <v-btn elevation="0" class="transparent-btn">Логин и пароль</v-btn>
+          <v-btn elevation="0" class="transparent-btn"
+                 @click="$router.push({name: 'employeeDetail', params: {id: index}})">Логин и пароль
+          </v-btn>
         </td>
       </tr>
       </tbody>
