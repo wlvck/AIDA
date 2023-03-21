@@ -19,6 +19,24 @@ export const routes = [
         component: () => import("@/pages/communities.vue")
     },
     {
+        path: '/communities/:id',
+        name: 'communityDetail',
+        redirect: {name: 'communityDetailProfile'},
+        component: () => import("@/pages/communityDetail.vue"),
+        children: [
+            {
+                path: 'community-detail-profile',
+                name: 'communityDetailProfile',
+                component: () => import("@/pages/communityDetailProfile.vue")
+            },
+            {
+                path: 'community-detail-history',
+                name: 'communityDetailHistory',
+                component: () => import("@/pages/communityDetailHistory.vue")
+            }
+        ]
+    },
+    {
         path: '/employees',
         name: 'employees',
         component: () => import("@/pages/employees.vue")

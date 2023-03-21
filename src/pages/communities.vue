@@ -54,7 +54,9 @@
         </td>
         <td class="text-center">Telegram</td>
         <td class="text-center">
-          <v-btn elevation="0" class="status-btn green">Светский</v-btn>
+          <v-btn elevation="0" class="status-btn green"
+                 @click="$router.push({name: 'communityDetail', params: {id: 1}})">Светский
+          </v-btn>
         </td>
         <td class="text-center">2.059</td>
         <td class="text-center">68%</td>
