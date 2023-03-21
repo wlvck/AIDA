@@ -107,6 +107,11 @@
   svg {
     margin-right: 12px;
   }
+
+  &-red {
+    border: 1px solid #FF0000;
+    color: #FF0000;
+  }
 }
 
 .filter-btn {
@@ -176,11 +181,24 @@
   color: $blue;
 }
 
-.last__visit {
+.btn-width {
+  width: 220px;
+  padding: 10px 0 !important;
+}
+
+.grid__block {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 50px;
   grid-row-gap: 5px;
+
+  &__2 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &__4 {
+    grid-template-columns: 4fr 1fr;
+  }
 
   .grid__title {
     font-weight: 500;
@@ -210,6 +228,13 @@
     color: #000000;
     margin-bottom: 24px;
   }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1A1A1A;
 }
 
 .tab__link {
