@@ -17,6 +17,13 @@
   }
 }
 
+.char__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 200px;
+  grid-row-gap: 100px;
+}
+
 .page {
   max-width: $max-width;
   margin: 0 auto;
