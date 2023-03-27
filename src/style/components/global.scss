@@ -193,6 +193,35 @@
   line-height: 16px;
 }
 
+.picker__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 9px;
+}
+
+.dp__main {
+  cursor: pointer;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.date__block {
+  background: $light-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px;
+  padding: 8px;
+  border-radius: 3px;
+
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
 .btn-width {
   width: 220px;
   padding: 10px 0 !important;
