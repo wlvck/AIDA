@@ -1,17 +1,92 @@
 <template>
-  <div class="char__grid">
-    <div>
-      <PieChart :chartData="pieChartData" :options="pieChartOptions"/>
+  <div>
+    <div class="d-flex align-start justify-space-between mt-9">
+      <h3>Основная информация</h3>
+      <div>
+        <v-btn elevation="0" class="status-btn green"> Светский</v-btn>
+        <p class="mt-3 updated__time">Обновлено: 24.03.2023</p>
+      </div>
     </div>
-    <div>
-      <LineChart :options="lineChartOptions1" :chartData="lineChartData1"/>
+    <div class="grid__block mb-16 grid__block__5">
+      <div>
+        <div class="grid__title">Кол-во участников</div>
+        <div class="grid__content">2.059</div>
+      </div>
+      <div>
+        <div class="grid__title">Дата создания</div>
+        <div class="grid__content">12.06.2022</div>
+      </div>
+      <div>
+        <div class="grid__title">Участников на учете</div>
+        <div class="grid__content">1.400 – 68%</div>
+      </div>
+      <div>
+        <div class="grid__title">Платформа</div>
+        <div class="grid__content">Telegram</div>
+      </div>
     </div>
-    <div>
-      <LineChart :options="lineChartOptions2" :chartData="lineChartData2"/>
+    <div class="char__grid">
+      <div>
+        <PieChart :chartData="pieChartData" :options="pieChartOptions"/>
+      </div>
+      <div>
+        <LineChart :options="lineChartOptions1" :chartData="lineChartData1"/>
+      </div>
+      <div>
+        <LineChart :options="lineChartOptions2" :chartData="lineChartData2"/>
+      </div>
+      <div>
+        <LineChart :options="lineChartOptions3" :chartData="lineChartData3"/>
+      </div>
     </div>
-    <div>
-      <LineChart :options="lineChartOptions3" :chartData="lineChartData3"/>
-    </div>
+    <h2 class="mt-16 h2 mb-10">Топ активных пользователей</h2>
+    <v-table>
+      <thead>
+      <tr>
+        <th class="text-left">
+          <span class="pointer">ФИО</span>
+        </th>
+        <th class="text-left px-0">
+          <span class="pointer">Логин</span>
+        </th>
+        <th class="text-center px-5">
+          <span class="pointer">Последнее действие</span>
+        </th>
+        <th class="text-center">
+          <span class="pointer">Категория</span>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Муратов Олжас</td>
+        <td>@12345
+        </td>
+        <td class="text-center">01.01.2023</td>
+        <td class="text-center">
+          <v-btn elevation="0" class="status-btn green">Светский</v-btn>
+        </td>
+      </tr>
+      <tr>
+        <td>Муратов Олжас</td>
+        <td>@12345
+        </td>
+        <td class="text-center">01.01.2023</td>
+        <td class="text-center">
+          <v-btn elevation="0" class="status-btn red">Аргессивный</v-btn>
+        </td>
+      </tr>
+      <tr>
+        <td>Муратов Олжас</td>
+        <td>@12345
+        </td>
+        <td class="text-center">01.01.2023</td>
+        <td class="text-center">
+          <v-btn elevation="0" class="status-btn yellow">Традиционный</v-btn>
+        </td>
+      </tr>
+      </tbody>
+    </v-table>
   </div>
 </template>
 

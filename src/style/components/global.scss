@@ -181,6 +181,18 @@
   color: $blue;
 }
 
+.h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.updated__time {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .btn-width {
   width: 220px;
   padding: 10px 0 !important;
@@ -198,6 +210,10 @@
 
   &__4 {
     grid-template-columns: 4fr 1fr;
+  }
+
+  &__5 {
+    grid-template-columns: 1fr 1fr 1fr 2fr;
   }
 
   .grid__title {
