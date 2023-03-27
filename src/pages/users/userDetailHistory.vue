@@ -1,13 +1,117 @@
 <template>
-
+  <div>
+    <v-btn class="filter-btn d-flex align-center" elevation="0">
+      Фильтры
+      <icon icon-name="arrow-bottom"/>
+    </v-btn>
+    <div class="mt-7 d-flex align-center">
+      <div class="checkbox__block mr-6">
+        <input id="1" type="checkbox" checked>
+        <label for="1">Действие пользователей</label>
+      </div>
+      <div class="checkbox__block mr-6">
+        <input id="2" type="checkbox">
+        <label for="2">Комментарии сотрудников</label>
+      </div>
+      <div class="checkbox__block mr-6">
+        <input id="3" type="checkbox">
+        <label for="3">Корректировки</label>
+      </div>
+      <div class="select__width">
+        <v-select :items="['Светский', 'Агрессивный', 'Традиционный']" label="Состояние"/>
+      </div>
+    </div>
+    <div class="content__body">
+      <div class="content__container">
+        <div class="d-flex mt-6 pt-6 align-center justify-space-between">
+          <h2 class="h2">
+            Действие пользователя в 24 февраль 2023 18:43
+          </h2>
+        </div>
+        <div class="d-flex align-center justify-space-between">
+          <div class="grid__block grid__block__3 mt-10 flex-shrink-1 flex-grow-1">
+            <div class="grid__title">Сообщение</div>
+            <div class="grid__title">Идентификатор пользователя</div>
+            <div class="grid__content">Здраствуйте друзья, как у вас дела?</div>
+            <div class="grid__content">Telegram – @12345</div>
+          </div>
+          <div class="d-flex flex-column align-end">
+            <div class="mb-4">
+              <p class="mr-4 d-inline-block">Итог:</p>
+              <v-btn class="status-btn green ml-3" elevation="0"> Светский</v-btn>
+            </div>
+            <v-btn class="status-btn transparent-btn" elevation="0">Корректировка</v-btn>
+          </div>
+        </div>
+      </div>
+      <div class="content__container">
+        <div class="d-flex mt-6 pt-6 align-center justify-space-between">
+          <h2 class="h2">
+            Комментарий сотрудника (УДР Алмалы – Иванов Иван) в 18 февраль 2023 11:23
+          </h2>
+        </div>
+        <div class="d-flex align-center justify-space-between">
+          <div class="grid__block grid__block__1 mt-10">
+            <div class="grid__title">Сообщение</div>
+            <div class="grid__content">По результам последней беседы предлагаю снять с учета</div>
+          </div>
+        </div>
+      </div>
+      <div class="content__container">
+        <div class="d-flex mt-6 pt-6 align-center justify-space-between">
+          <h2 class="h2">
+            Корректировка данных о пользователе в 12 февраль 2023 21:04
+          </h2>
+        </div>
+        <div class="d-flex align-center justify-space-between">
+          <div class="grid__block grid__block__3 mt-10 flex-shrink-1 flex-grow-1">
+            <div class="grid__title">Автор действия</div>
+            <div class="grid__title">Сообщение</div>
+            <div class="grid__content">УДР Алмалы – Иванов Иван</div>
+            <div class="grid__content">Убийственно красивый вид на закат</div>
+          </div>
+          <div class="d-flex flex-column align-end">
+            <div class="grid__content d-flex flex-column align-end">
+              <div class="d-flex mb-11">
+                <p class="mr-4">Было:</p>
+                <v-btn class="status-btn red" elevation="0">Агрессивный</v-btn>
+              </div>
+              <div class="d-flex">
+                <p class="mr-4">Стало:</p>
+                <v-btn class="status-btn green" elevation="0"> Светский</v-btn>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content__container">
+        <div class="d-flex mt-6 pt-6 align-center justify-space-between">
+          <h2 class="h2">
+            Действие пользователя в 10 февраль 2023 9:15
+          </h2>
+        </div>
+        <div class="d-flex align-center justify-space-between">
+          <div class="grid__block grid__block__3 flex-shrink-1 flex-grow-1">
+            <div class="grid__title">Сообщение</div>
+            <div class="grid__title">Идентификатор пользователя</div>
+            <div class="grid__content">Убийственно красивый вид на закат</div>
+            <div class="grid__content">Telegram – @12345</div>
+          </div>
+          <div class="d-flex flex-column align-end">
+            <div class="mb-4">
+              <p class="mr-4 d-inline-block">Итог:</p>
+              <v-btn class="status-btn red" elevation="0">  Агрессивный</v-btn>
+            </div>
+            <v-btn class="status-btn transparent-btn" elevation="0">Корректировка</v-btn>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
+<script setup>
+import Icon from "@/components/icon.vue";
+import {ref} from "vue";
 
-<script>
-export default {
-  name: "userDetailHistory"
-}
+const ex1 = ref()
 </script>
-
-<style scoped>
-
-</style>
