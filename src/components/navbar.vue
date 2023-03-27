@@ -5,16 +5,16 @@
         AI<span>DA</span>
       </div>
       <div class="navbar__links d-flex align-center">
-        <router-link to="/statistics">
+        <router-link  to="/statistics">
           Статистика
         </router-link>
         <router-link to="/users">
           Пользователи
         </router-link>
-        <router-link to="/communities">
+        <router-link to="/communities" :class="['communityDetailProfile', 'communityDetailHistory'].includes($route.name) ? 'router-link-active' : ''">
           Сообщества
         </router-link>
-        <router-link to="/employees">
+        <router-link to="/employees" :class="['employeeDetailProfile', 'employeeDetailHistory'].includes($route.name) ? 'router-link-active' : ''">
           Сотрудники
         </router-link>
         <router-link to="/calibration">
