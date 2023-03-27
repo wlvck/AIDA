@@ -200,6 +200,36 @@
   margin-bottom: 9px;
 }
 
+.top__header {
+  margin-bottom: 27px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.top__grid {
+  margin-bottom: 105px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 32px;
+
+  .top__title {
+    padding: 9px;
+    border-bottom: 1px solid rgba(194, 201, 209, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .top__content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 .dp__main {
   cursor: pointer;
   width: 16px !important;
