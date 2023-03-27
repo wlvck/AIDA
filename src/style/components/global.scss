@@ -204,6 +204,10 @@
   grid-column-gap: 50px;
   grid-row-gap: 5px;
 
+  &__1 {
+    grid-template-columns: 1fr;
+  }
+
   &__2 {
     grid-template-columns: 2fr 1fr;
   }
@@ -251,6 +255,36 @@
   font-size: 24px;
   line-height: 24px;
   color: #1A1A1A;
+}
+
+.select__width {
+  max-width: 320px;
+  width: 100%;
+}
+
+.content__container {
+  margin-bottom: 130px;
+}
+
+.checkbox__block {
+  display: inline-flex;
+  align-items: center;
+
+  input {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+
+  }
+
+  label {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $black;
+  }
 }
 
 .tab__link {
