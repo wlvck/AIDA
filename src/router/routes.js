@@ -9,6 +9,24 @@ export const routes = [
         component: () => import("@/pages/users.vue")
     },
     {
+        path: '/users/:id',
+        name: 'userDetail',
+        redirect: {name: 'userDetailProfile'},
+        component: () => import("@/pages/userDetail.vue"),
+        children: [
+            {
+                path: 'user-detail-history',
+                name: 'userDetailHistory',
+                component: () => import("@/pages/userDetailHistory.vue")
+            },
+            {
+                path: 'user-detail-profile',
+                name: 'userDetailProfile',
+                component: () => import("@/pages/userDetailProfile.vue")
+            }
+        ]
+    },
+    {
         path: '/statistics',
         name: 'statistics',
         component: () => import("@/pages/statistics.vue")

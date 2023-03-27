@@ -8,13 +8,13 @@
         <router-link  to="/statistics">
           Статистика
         </router-link>
-        <router-link to="/users">
+        <router-link to="/users" :class="{'router-link-active': ['userDetailProfile', 'userDetailHistory'].includes($route.name)}">
           Пользователи
         </router-link>
-        <router-link to="/communities" :class="['communityDetailProfile', 'communityDetailHistory'].includes($route.name) ? 'router-link-active' : ''">
+        <router-link to="/communities" :class="{'router-link-active': ['communityDetailProfile', 'communityDetailHistory'].includes($route.name)}">
           Сообщества
         </router-link>
-        <router-link to="/employees" :class="['employeeDetailProfile', 'employeeDetailHistory'].includes($route.name) ? 'router-link-active' : ''">
+        <router-link to="/employees" :class="{'router-link-active': ['employeeDetailProfile', 'employeeDetailHistory'].includes($route.name)}">
           Сотрудники
         </router-link>
         <router-link to="/calibration">

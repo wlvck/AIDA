@@ -39,7 +39,9 @@
         <td>Муратов Олжас Максатович</td>
         <td>Здраствуйте друзья, как у вас дела?</td>
         <td>
-          <v-btn elevation="0" class="status-btn green">Светский</v-btn>
+          <v-btn elevation="0" class="status-btn green" @click="$router.push({name: 'userDetail', params: {id: 1}})">
+            Светский
+          </v-btn>
         </td>
         <td>УДР Алмалы Иванов Иван:
           По результам последней беседы и предлагаю снять с учета
